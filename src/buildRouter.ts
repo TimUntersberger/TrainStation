@@ -40,6 +40,11 @@ const schemaValidator = (route: Route) => (
   }
 
   if (route.bodySchema) {
+    if (req.body == undefined) {
+      throw new Error(
+        "Body is undefined. Did you use the body parser middleware of express?"
+      );
+    }
     const result = route.bodySchema.decode(req.body);
 
     if (!isRight(result)) {

@@ -1,8 +1,10 @@
 import express from "express";
 import path from "path";
-import trainStation from "trainstation";
+import trainStation from "../../src/";
 
 const app = express();
+
+app.use(express.json());
 
 trainStation.enableHotReload();
 trainStation.generateRoutes(path.join(__dirname, "routes"));
