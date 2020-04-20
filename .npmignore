@@ -1,0 +1,7 @@
+examples
+node_modules
+src
+*.png
+*.md
+*.svg
+tsconfig.*
