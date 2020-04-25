@@ -1,6 +1,6 @@
 {
   "name": "trainstation",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "description": "TrainStation provides an overview over all registered routes in express. It tries to get additional information via any typescript typings.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

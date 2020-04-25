@@ -1,6 +1,6 @@
 import express from "express";
 import path from "path";
-import trainStation from "../../src/";
+import trainStation from "trainstation";
 
 const app = express();
 

@@ -13,8 +13,8 @@ export function printRoutes() {
   routes.map((r) => `${r.method} ${r.url}`).forEach((x) => console.log(x));
 }
 
-export function generateRoutes(cwd) {
-  const pattern = "**/*.ts";
+export function generateRoutes(cwd: string) {
+  const pattern = "**/*.{ts,js}";
 
   routes = glob
     .sync(pattern, { cwd })
